@@ -1,3 +1,4 @@
 .vscode
-NodeJS_GUID.txt
+#NodeJS_GUID.txt
 node_modules/
+#src/public/css/

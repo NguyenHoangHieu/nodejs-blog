@@ -1,0 +1,28 @@
+1. go to path : npm init 
+2. create index.js 
+3. npm i express   //lam Server 
+
+--install Nodemon & Debug
+//Nodemon dung de auto start project
+> npm i -g Nodemon
+> npm i nodemon --save-dev
+"start": "nodemon src/index.js",
+
+-- install GIT repo 
+git init 
+
+--install Morgan
+npm i morgan --save-dev 
+
+--install teamplate engine 
+npm i express-handlebars
+
+--install scss - sass 
+npm i node-sass --save-dev
+
+
+
+
+
+
+
