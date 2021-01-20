@@ -3,6 +3,8 @@ const express = require('express');
 const handlebars = require('express-handlebars');
 const morgan = require('morgan');
 
+const route = require('./routes/index');
+
 const app = express();
 const port = 3000;
 
@@ -22,9 +24,20 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
 
-app.get('/', (req, res) => {
-    return res.render('home');
-})
+// app.get('/', (req, res) => {
+//     res.render('home');
+// });
+
+// app.get('/news', (req, res) => {
+//     res.render('news');
+// });
+
+// app.get('/contact', (req, res) => {
+//     res.render('contact');
+// });
+
+// Routes config
+route(app);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
