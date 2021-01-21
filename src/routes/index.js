@@ -1,5 +1,6 @@
 const newsRouter = require("./news");
 const contactRouter = require("./contact");
+const specterRouter = require("./specter");
 
 function route(app) {
 
@@ -8,6 +9,8 @@ function route(app) {
     });
 
     app.use('/news', newsRouter);
+
+    app.use('/specter', specterRouter);
 
     // app.get('/news', (req, res) => {
     //     res.render('news');
